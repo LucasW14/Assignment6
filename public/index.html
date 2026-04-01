@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Book</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>😂 Joke Book</h1>
+
+    <!-- Random Joke -->
+    <section class="card">
+        <h2>Random Joke</h2>
+        <div id="jokes-container"></div>
+    </section>
+
+    <!-- Categories -->
+    <section class="card">
+        <h2>Joke Categories</h2>
+        <button id="catButton">Get Categories</button>
+        <div id="joke-cat-container"></div>
+    </section>
+
+    <!-- Search -->
+    <section class="card">
+        <h2>Search by Category</h2>
+        <form id="search">
+            <input type="text" name="category" placeholder="Enter category..." required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="jokes-in-category"></div>
+    </section>
+
+    <!-- Add Joke -->
+    <section class="card">
+        <h2>Add a Joke</h2>
+        <form id="add-joke-form">
+            <input type="text" id="xcategory" placeholder="Category" required>
+            <input type="text" id="xsetup" placeholder="Setup" required>
+            <input type="text" id="xdelivery" placeholder="Delivery" required>
+            <button type="submit">Add Joke</button>
+        </form>
+    </section>
+
+    <!-- Updated -->
+    <section class="card">
+        <h2>Updated Jokes</h2>
+        <div id="jokes-updated"></div>
+    </section>
+
+</div>
+
+</body>
+</html>

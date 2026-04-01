@@ -1,0 +1,120 @@
+/* Fancy Joke Card */
+#jokes-container {
+    max-width: 600px;       /* limits width for readability */
+    margin: 40px auto;      /* center horizontally with some top margin */
+    padding: 20px 30px;     
+    background: linear-gradient(135deg, #FFA500, #FF8C00); /* warm orange gradient */
+    color: #fff;            /* white text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    border-radius: 15px;    /* rounded corners */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25); /* soft shadow */
+    text-align: center;     /* center the text */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+#jokes-container:hover {
+    transform: translateY(-5px); /* slight lift */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.35); /* bigger shadow */
+}
+
+/* Style the category */
+#jokes-container span.category {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Setup and delivery styling */
+#jokes-container p {
+    margin: 10px 0;
+}
+
+/* General page styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: #fff;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Card sections */
+.card {
+    background: #2f2f4f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section titles */
+.card h2 {
+    margin-top: 0;
+}
+
+/* Buttons */
+button {
+    background: #ff7b00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #ff9500;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Joke text */
+#jokes-container,
+#jokes-in-category,
+#jokes-updated,
+#joke-cat-container {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Paragraph styling */
+p {
+    background: #3b3b63;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+}
