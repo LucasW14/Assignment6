@@ -42,7 +42,7 @@
         let categories = document.getElementById("joke-cat-container");
         categories.innerHTML = "";
 
-        fetch(MY_SERVER_BASEURL + "/category")
+        fetch(MY_SERVER_BASEURL + "/categories")
             .then(checkStatus)
             .then((response) => {
                 for (const joke of response) {
@@ -63,9 +63,10 @@
         let params = new FormData(search);
         let object = Object.fromEntries(params);
         let category = object.category;
+        let limit = object.limit;
 
 
-        fetch(MY_SERVER_BASEURL + "/category/" + category)
+        fetch(MY_SERVER_BASEURL + "/category/" + category + "?limit=" + limit)
             .then(checkStatus)
             .then((response) => {
                 for (const joke of response) {
